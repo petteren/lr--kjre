@@ -9,9 +9,9 @@ def on_button_pressed_b():
     while True:
         RingbitCar.running_time(RingbitCar.Direction_run.FORWARD, 10)
         if RingbitCar.ringbitcar_sonarbit(RingbitCar.Distance_Unit.DISTANCE_UNIT_CM) < 10:
-            basic.pause(1000)
+            basic.pause(10)
             RingbitCar.turnleft()
-            basic.pause(1000)
+            basic.pause(10)
             RingbitCar.running_time(RingbitCar.Direction_run.FORWARD, 10)
         basic.show_icon(IconNames.HEART)
 input.on_button_pressed(Button.B, on_button_pressed_b)
