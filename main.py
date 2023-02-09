@@ -17,3 +17,5 @@ def on_button_pressed_b():
 input.on_button_pressed(Button.B, on_button_pressed_b)
 
 RingbitCar.init_wheel(AnalogPin.P1, AnalogPin.P2)
+
+//dette er bare tekst
