@@ -1,12 +1,13 @@
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
     while (true) {
         basic.showIcon(IconNames.Giraffe)
         if (RingbitCar.ringbitcar_sonarbit(RingbitCar.Distance_Unit.Distance_Unit_cm) < 10) {
             basic.showIcon(IconNames.Ghost)
         }
+        
     }
 })
-input.onButtonPressed(Button.B, function () {
+input.onButtonPressed(Button.B, function on_button_pressed_b() {
     while (true) {
         RingbitCar.running_time(RingbitCar.Direction_run.forward, 10)
         if (RingbitCar.ringbitcar_sonarbit(RingbitCar.Distance_Unit.Distance_Unit_cm) < 10) {
@@ -15,6 +16,7 @@ input.onButtonPressed(Button.B, function () {
             basic.pause(1000)
             RingbitCar.running_time(RingbitCar.Direction_run.forward, 10)
         }
+        
         basic.showIcon(IconNames.Heart)
     }
 })
